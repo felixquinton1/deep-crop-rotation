@@ -47,5 +47,5 @@ Each parcel of the dataset should appears for each year with the same name in th
 For each year you will need to precise the length of the temporal sequence with the option `--sly`.
 
 ## Credit 
- - The original PSE-LTAE model adapted for your purpose can be found [here](https://github.com/VSainteuf/lightweight-temporal-attention-pytorch)
+ - The original PSE-LTAE model adapted for our purpose can be found [here](https://github.com/VSainteuf/lightweight-temporal-attention-pytorch)
  - This model was inspired by the works of Vaswani et al. on the Transformer. 
