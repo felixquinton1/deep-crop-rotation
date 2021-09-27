@@ -1,7 +1,7 @@
 # Deep Crop Rotation
 
 While annual crop rotations play a crucial role for agricultural optimization, they have been largely ignored for automated crop type mapping .
-We take advantage of the increasing quantity of annotated satellite data to propose the first deep learning approach modeling simultaneously the inter- and intra-annual agricultural dynamics of parcel classification. Along with simple training adjustments, our model provides an improvement of over $6.6$ mIoU points over the current state-of-the-art of crop classification. Furthermore, we release the first large-scale multi-year agricultural dataset with over $300\,000$ annotated parcels.
+We take advantage of the increasing quantity of annotated satellite data to propose the first deep learning approach modeling simultaneously the inter- and intra-annual agricultural dynamics of parcel classification. Along with simple training adjustments, our model provides an improvement of over 6.6 mIoU points over the current state-of-the-art of crop classification. Furthermore, we release the first large-scale multi-year agricultural dataset with over 300 000 annotated parcels.
 
 ## Requirements
  - PyTorch + Torchnet
@@ -11,7 +11,7 @@ We take advantage of the increasing quantity of annotated satellite data to prop
  - json
  - argparse
  
- The code was developed in python 3.7.7 with pytorch 1.8.1
+ The code was developed in python 3.7.7 with pytorch 1.8.1 and cuda 11.3 on a debian, ubuntu 20.04.3 environment.
  
 ## Downloads
  
@@ -44,4 +44,4 @@ Use a pre-trained model with: `--test_mode true --loaded_model path_to_your_data
   - META: contains the `labels.json` file containing the ground truth.
   - DATA: contains a sub folder by year containing a .pkl file by parcel.
 Each parcel of the dataset should appears for each year with the same name in the DATA folder.
-For each year you will need to precise the length of the temporal sequence with the option `--sly`
+For each year you will need to precise the length of the temporal sequence with the option `--sly`.
