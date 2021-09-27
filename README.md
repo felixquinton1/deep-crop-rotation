@@ -45,3 +45,7 @@ Use a pre-trained model with: `--test_mode true --loaded_model path_to_your_data
   - DATA: contains a sub folder by year containing a .pkl file by parcel.
 Each parcel of the dataset should appears for each year with the same name in the DATA folder.
 For each year you will need to precise the length of the temporal sequence with the option `--sly`.
+
+## Credit 
+ - The original PSE-LTAE model adapted for your purpose can be found [here](https://github.com/VSainteuf/lightweight-temporal-attention-pytorch)
+ - This model was inspired by the works of Vaswani et al. on the Transformer. 
