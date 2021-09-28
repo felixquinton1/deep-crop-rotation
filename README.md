@@ -6,6 +6,8 @@ We take advantage of the increasing quantity of annotated satellite data to prop
 <p align="center">
   <img src="./gfx/declaration_en.jpg" alt="Sublime's custom image"/>
 </p>
+
+
 ## Requirements
  - PyTorch + Torchnet
  - Numpy + Pandas + Scipy + scikit-learn 
