@@ -46,7 +46,7 @@ Use a pre-trained model with: `--test_mode true --loaded_model path_to_your_data
 
   If you want to train a model with your own data, you need to respect a specific architecture:
   - A main repository should contain two sub folders: `DATA` and `META` and a normalisation file.
-  - META: contains the `labels.json` file containing the ground truth.
+  - META: contains the `labels.json` file containing the ground truth and the `dates.json` file containing the acquisition dates of each elements of the temporal sequence per year.
   - DATA: contains a sub folder by year containing a .pkl file by parcel.
 Each parcel of the dataset should appears for each year with the same name in the DATA folder.
 For each year you will need to precise the length of the temporal sequence with the option `--sly`.
