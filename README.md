@@ -3,11 +3,11 @@
 While annual crop rotations play a crucial role for agricultural optimization, they have been largely ignored for automated crop type mapping .
 We take advantage of the increasing quantity of annotated satellite data to propose the first deep learning approach modeling simultaneously the inter- and intra-annual agricultural dynamics of parcel classification. Along with simple training adjustments, our model provides an improvement of over 6.6 mIoU points over the current state-of-the-art of crop classification. Furthermore, we release the first large-scale multi-year agricultural dataset with over 300 000 annotated parcels.
 
-![](./gfx/teaser.png)
-
 <p align="center">
-  <img src="./gfx/declaration_en.jpg" alt="Sublime's custom image"/>
+  <img src="./gfx/teaser.png" alt="Sublime's custom image"/>
 </p>
+
+
 ## Requirements
  - PyTorch + Torchnet
  - Numpy + Pandas + Scipy + scikit-learn 
@@ -50,8 +50,8 @@ If you want to train a model with your own data, you need to respect a specific 
   - A main repository should contain two sub folders: `DATA` and `META` and a normalisation file.
   - META: contains the `labels.json` file containing the ground truth, `dates.json` containing each date of acquisition and `geomfeat.json` containing geometrical features (dates.json and geomfeat.json are optional).
   - DATA: contains a sub folder by year containing a .npy file by parcel.
-  
-Each parcel of the dataset should appears for each year with the same name in the DATA folder.
+
+Each parcel of the dataset must appear for each year with the same name in the DATA folder.
 You must specify the number of acquisitions in the year that has the most acquisitions with the option `--lms length_of_the_sequence`.
 You also need to add your own normalisation file in train.py 
 
