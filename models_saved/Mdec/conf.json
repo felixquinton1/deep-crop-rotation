@@ -1,0 +1,68 @@
+{
+    "dataset_folder": "/home/FQuinton/Bureau/data_pse",
+    "year": [
+        "2018",
+        "2019",
+        "2020"
+    ],
+    "res_dir": "./results/test",
+    "num_workers": 8,
+    "rdm_seed": 1,
+    "device": "cuda",
+    "display_step": 50,
+    "preload": false,
+    "test_mode": false,
+    "loaded_model": "/home/FQuinton/Bureau/lightweight-temporal-attention-pytorch/models_saved/2019",
+    "kfold": 5,
+    "epochs": 100,
+    "batch_size": 128,
+    "lr": 0.001,
+    "gamma": 1,
+    "npixel": 64,
+    "input_dim": 10,
+    "mlp1": [
+        10,
+        32,
+        64
+    ],
+    "pooling": "mean_std",
+    "mlp2": [
+        132,
+        128
+    ],
+    "geomfeat": 1,
+    "n_head": 16,
+    "d_k": 8,
+    "mlp3": [
+        256,
+        128
+    ],
+    "T": 1000,
+    "positions": "bespoke",
+    "lms": 36,
+    "sly": {
+        "2018": 36,
+        "2019": 27,
+        "2020": 29
+    },
+    "dropout": 0.2,
+    "d_model": 256,
+    "tempfeat": 1,
+    "num_classes": 20,
+    "mlp4": [
+        148,
+        64,
+        32,
+        20
+    ],
+    "tae": false,
+    "gru": false,
+    "hidden_dim": 156,
+    "tcnn": false,
+    "nker": [
+        32,
+        32,
+        128
+    ],
+    "N_params": 132116
+}
