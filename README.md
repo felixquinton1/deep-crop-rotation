@@ -2,7 +2,7 @@
 
 Paper (to come very soon!)
 
-We propose a deep learning approach to modelling both inter- and intra-annual patterns for parcel classification. Our approach, based on the [PSE+LTAE](https://github.com/VSainteuf/lightweight-temporal-attention-pytorch) model, provides a significant performance boost of +6.6 mIoU compared to single-year models. We release the first large-scale multi-year agricultural dataset with over 100 000 annotated parcels f 3 years: 2018, 2019, and 2020.
+We propose a deep learning approach to modelling both inter- and intra-annual patterns for parcel classification. Our approach, based on the [PSE+LTAE](https://github.com/VSainteuf/lightweight-temporal-attention-pytorch) model, provides a significant performance boost of +6.6 mIoU compared to single-year models. We release the first large-scale multi-year agricultural dataset with over 100 000 annotated parcels for 3 years: 2018, 2019, and 2020.
 
 <p align="center">
   <img src="./gfx/teaser.png" alt="Sublime's custom image"/>
@@ -36,13 +36,13 @@ You will only need to specify the path to the dataset folder:
 
 If you want to use a specific number of year for temporal features add: `--tempfeat number_of_year` (eg. `3`)
 
-Choose the years used to train the model with: `--year` (eg. '[2018,2019,2020]`)
+Choose the years used to train the model with: `--year` (eg. "['2018', '2019', '2020']")
 
 ### Pre-trained models
 
 Two pre-trained models are available in the `models_saved` repository: 
-- Mdec: Multi-year Model with 2 years temporal features trained on a mixed year training set.
-- Mmixed: singe year model, trained on a mixed year training set.
+- Mdec: Multi-year Model with 2 years temporal features, trained on a mixed year training set.
+- Mmixed: singe-year model, trained on a mixed year training set.
 
 Use our pre-trained model with: `--test_mode true --loaded_model path_to_your_model --tempfeat number_of_years_used_to_train_the_model`
 
