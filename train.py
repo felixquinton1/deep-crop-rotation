@@ -4,6 +4,7 @@ import numpy as np
 
 from sklearn.metrics import confusion_matrix
 import os
+import  ast
 import json
 import pickle as pkl
 import argparse
@@ -285,7 +286,7 @@ if __name__ == '__main__':
     # Set-up parameters
     parser.add_argument('--dataset_folder', default='path_to_your_folder', type=str,
                         help='Path to the folder where the results are saved.')
-    parser.add_argument('--year', default=['2018', '2019', '2020'], type=str,
+    parser.add_argument('--year', default="['2019', '2020']", type=str,
                         help='The year of the data you want to use')
     parser.add_argument('--res_dir', default='./results/model', help='Path to the folder where the results should be stored')
     parser.add_argument('--num_workers', default=8, type=int, help='Number of data loading workers')
@@ -365,12 +366,15 @@ if __name__ == '__main__':
     parser.set_defaults(gru=False, tcnn=False, tae=False)
 
     config = parser.parse_args()
+
     config = vars(config)
     for k, v in config.items():
         if 'mlp' in k or k == 'nker':
             v = v.replace('[', '')
             v = v.replace(']', '')
             config[k] = list(map(int, v.split(',')))
+
+    config['year'] = ast.literal_eval(config['year'])
 
     pprint.pprint(config)
     main(config)
