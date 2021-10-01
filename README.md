@@ -3,7 +3,7 @@
 While annual crop rotations play a crucial role for agricultural optimization, they have been largely ignored for automated crop type mapping .
 We take advantage of the increasing quantity of annotated satellite data to propose the first deep learning approach modeling simultaneously the inter- and intra-annual agricultural dynamics of parcel classification. Along with simple training adjustments, our model provides an improvement of over 6.6 mIoU points over the current state-of-the-art of crop classification. Furthermore, we release the first large-scale multi-year agricultural dataset with over 300 000 annotated parcels.
 
-![](./gfx/declaration_en.jpg)
+![](./gfx/teaser.png)
 
 <p align="center">
   <img src="./gfx/declaration_en.jpg" alt="Sublime's custom image"/>
