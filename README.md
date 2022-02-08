@@ -1,6 +1,6 @@
 # Deep Crop Rotation
 
-Paper (to come very soon!)
+The paper concerning this project is available [here](https://www.mdpi.com/2072-4292/13/22/4599).
 
 We propose a deep learning approach to modelling both inter- and intra-annual patterns for parcel classification. Our approach, based on the [PSE+LTAE](https://github.com/VSainteuf/lightweight-temporal-attention-pytorch) model, provides a significant performance boost of +6.6 mIoU compared to single-year models. We release the first large-scale multi-year agricultural dataset with over 100 000 annotated parcels for 3 years: 2018, 2019, and 2020.
 
